@@ -13,12 +13,21 @@ module.exports = () => {
       main: './src/js/index.js',
       install: './src/js/install.js'
     },
+
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
+
+    devServer: {
+      hot: 'only'
+    },
+
     plugins: [
-      
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'Webpack Plugin'
+      })
     ],
 
     module: {
@@ -26,6 +35,10 @@ module.exports = () => {
         {
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/resource',
         },
         {
           test: /\.m?js$/,

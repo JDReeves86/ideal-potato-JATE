@@ -1,8 +1,11 @@
 import { Workbox } from 'workbox-window';
 import Editor from './editor';
-import { header } from './header'; //do I need this? I think so...?
+// import { header } from './header'; //do I need this? I think so...?
 import './database';
 import '../css/style.css';
+import logoImage from '../images/logo.png'
+
+document.getElementById('logo').setAttribute('src', logoImage)
 
 const main = document.querySelector('#main');
 main.innerHTML = '';
@@ -31,4 +34,8 @@ if ('serviceWorker' in navigator) {
   workboxSW.register();
 } else {
   console.error('Service workers are not supported in this browser.');
+}
+
+if (module.hot) {
+  module.hot.accept((err) => {if (err) console.error(err)})
 }
