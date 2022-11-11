@@ -3,9 +3,6 @@ import Editor from './editor';
 // import { header } from './header'; //do I need this? I think so...?
 import './database';
 import '../css/style.css';
-import logoImage from '../images/logo.png'
-
-document.getElementById('logo').setAttribute('src', logoImage)
 
 const main = document.querySelector('#main');
 main.innerHTML = '';
