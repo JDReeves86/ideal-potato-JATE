@@ -1,5 +1,134 @@
 # 19 Progressive Web Applications (PWA): Text Editor
 
+
+## ideal-potato- Text Editor
+
+---
+
+### Contents 
+
+---
+
+1. Objectives
+2. About
+4. Links
+5. Assignment details & grading rubric (*ignore me*)
+
+<br>
+<br>
+
+### Objectives ###
+
+---
+
+<br>
+
+1. WHEN the application is opened in the editor THEN the user will see a client server folder structure.
+2. WHEN I run `npm run start` from the root directory THEN I find that my application should start up the backend and serve the client
+3. WHEN I run the text editor application from my terminal THEN I find that my JavaScript files have been bundled using webpack
+4. WHEN I run my webpack plugins THEN I find that I have a generated HTML file, service worker, and a manifest file.
+5. WHEN I use next-gen JavaScript in my application THEN I find that the text editor still functions in the browser without errors.
+6. WHEN I open the text editor THEN I find that IndexedDB has immediately created a database storage.
+7. WHEN I enter content and subsequently click off of the DOM window THEN I find that the content in the text editor has been saved with IndexedDB.
+8. WHEN I reopen the text editor after closing it THEN I find that the content in the text editor has been retrieved from our IndexedDB.
+9. WHEN I click on the Install button THEN I download my web application as an icon on my desktop.
+10. WHEN I load my web application THEN I should have a registered service worker using workbox.
+11. WHEN I register a service worker THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets.
+12. WHEN I deploy to Heroku THEN I should have proper build scripts for a webpack application.
+
+
+<br>
+<br>
+
+### About ###
+
+---
+
+<br>
+
+1. WHEN the application is opened in the editor THEN the user will see a client server folder structure.
+  > The application uses a client server folder structure to partition out the client files from the server files.
+
+2. WHEN I run `npm run start` from the root directory THEN I find that my application should start up the backend and serve the client
+  > the stript npm run start will build the production webpack files and then start the server on the specified port to begin serving the application.
+
+3. WHEN I run the text editor application from my terminal THEN I find that my JavaScript files have been bundled using webpack
+  > Using the npm run client will run the webpack scripts to bundle the htmk, css, and js files to be served to the user in development mode.
+
+4. WHEN I run my webpack plugins THEN I find that I have a generated HTML file, service worker, and a manifest file.
+  > Using the npm run client will bundle and generate an html file, service worker, and a manifest file in the dist directory to be served to the client.
+
+5. WHEN I use next-gen JavaScript in my application THEN I find that the text editor still functions in the browser without errors.
+  > The text editor functions in the browser both on and offline.
+
+6. WHEN I open the text editor THEN I find that IndexedDB has immediately created a database storage.
+  > The editor uses indexedDB for client side storage of the text in the editor. 
+
+7. WHEN I enter content and subsequently click off of the DOM window THEN I find that the content in the text editor has been saved with IndexedDB.
+  > When the user clicks off the editor, the putDB function is called which takes the editor content and puts it to the indexedDB under the id of 1. 
+
+8. WHEN I reopen the text editor after closing it THEN I find that the content in the text editor has been retrieved from our IndexedDB.
+  > When the editor is opened, a get call is made to the indexedDB and retireves the prior text. If nothing is found in the DB, the editor will fall back to local storage, if nothing is present in local storage, the header is loaded to the editor.
+
+9. WHEN I click on the Install button THEN I download my web application as an icon on my desktop.
+  > When the install button is clicked the user is prompted to respond if they wish to install the application. If yes, and icon is placed on the desktop for offline use.
+
+10. WHEN I load my web application THEN I should have a registered service worker using workbox.
+  > Service workers are built per the manifest and used for asset caching of the static files and icons.
+
+11. WHEN I register a service worker THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets.
+  > Assets are pre cached when initially loaded online, and used for when the network is unavailable, allowing for offline use.
+
+12. WHEN I deploy to Heroku THEN I should have proper build scripts for a webpack application.
+  > App succesfully deploys and launches on Heroku.
+<br>
+<br>
+
+### Screenshots ###
+
+---
+
+N/A
+
+<br>
+
+### Links ###
+
+---
+
+<br>
+
+
+Link to Github repo: https://github.com/JDReeves86/ideal-potato-JATE
+
+Link to Heroku app: 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+---
+
+---
+
+## Assignment Details & Grading Rubric ##
+
+---
+
+---
+
+<br>
+<br>
+
+
+
+# 19 Progressive Web Applications (PWA): Text Editor
+
 ## Your Task
 
 As you have progressed through this course, you have put together a number of impressive projects that you can show off to potential employers. This project is no exception; in fact, it features some of the most impressive expressions of the concepts you have learned so far.

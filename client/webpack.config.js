@@ -41,8 +41,8 @@ module.exports = () => {
         short_name: 'JATE',
         description: 'Edit text & stuff',
         background_color: '#31e146',
-        start_url: '/',
-        publicPath: '/',
+        start_url: './',
+        publicPath: './',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
