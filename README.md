@@ -88,9 +88,30 @@
 
 ---
 
-N/A
+1. ![myscreenshot](./Assets/screenshot1.png)
 
 <br>
+
+Editor in browser
+
+<br>
+
+2. ![myscreenshot](./Assets/screenshot2.png)
+
+<br>
+
+Showing offline functionality
+
+<br>
+
+3. ![myscreenshot](./Assets/screenshot3.png)
+
+<br>
+
+Desktop icon
+
+<br>
+
 
 ### Links ###
 
@@ -101,7 +122,7 @@ N/A
 
 Link to Github repo: https://github.com/JDReeves86/ideal-potato-JATE
 
-Link to Heroku app: 
+Link to Heroku app: https://polar-wave-88099.herokuapp.com/
 <br>
 <br>
 <br>
