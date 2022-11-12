@@ -33,14 +33,16 @@ module.exports = () => {
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }), 
+      new WorkboxPlugin.GenerateSW(),
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name:'icons',
-        short_name: 'icons',
-        description: 'icons for stuff',
-        start_url: './',
-        publicPath: './',
+        name:'Just Another Text Editor',
+        short_name: 'JATE',
+        description: 'Edit text & stuff',
+        background_color: '#31e146',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),

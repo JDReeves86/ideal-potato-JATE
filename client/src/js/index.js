@@ -1,6 +1,5 @@
 import { Workbox } from 'workbox-window';
 import Editor from './editor';
-// import { header } from './header'; //do I need this? I think so...?
 import './database';
 import '../css/style.css';
 
